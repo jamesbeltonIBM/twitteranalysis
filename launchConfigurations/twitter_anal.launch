@@ -1,9 +1,0 @@
-{
-  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
-  "Params": {
-    "Name": "MyTwitterAnalysis",
-    "Instrumentation": {}
-  },
-  "Path": "manifest.yml",
-  "Type": "Cloud Foundry"
-}
