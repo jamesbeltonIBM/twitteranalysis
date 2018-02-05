@@ -6,7 +6,7 @@ angular.module('template', [])
 
 
 $scope.getAllTweets = function (){
-  nodered($scope, 'https://uondemored.eu-gb.mybluemix.net/all-tweets', 'get', null, function(result){
+  nodered($scope, 'XX INSERT YOUR /GET URL HERE XX', 'get', null, function(result){
     $scope.tweets = result.response;
     drawgraph($scope.tweets);
   });
