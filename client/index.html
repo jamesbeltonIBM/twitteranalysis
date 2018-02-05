@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="template">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular + Bootstrap Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <body ng-controller="MainCtrl">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12">
+        <!--    Change the next line for your title - what tweets have you been analysing? -->
+          <h1>Twitter Sentiment Analysis</h1> 
+          
+          <h4>Click the button to see IBM Watson's analysis of the sentiment contained in the #uonwatson tweets. 
+          The higher the score, the more positive the sentiment and vice-versa! Scroll to the bottom for further details.</h4> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4">
+          </div>
+          </div>
+          
+          <button ng-click="getAllTweets()">Analyse Tweets</button>
+          
+          <div class="row">
+            <div class="col-xs-12">
+              <div id="graph"></div>
+            </div>
+          </div>
+        
+        <div class="row">
+          <div calls = "col-xs-12">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>SCORE</th>
+                  <th>TWEET</th>
+                  <th>USERNAME</th>
+                  <th>LOCATION</th>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr ng-repeat="tweet in tweets">
+                   <td>{{tweet.ID}}</td>
+                   <td>{{tweet.SCORE}}</td>
+                   <td>{{tweet.TWEET}}</td>
+                   <td>{{tweet.USERNAME}}</td>
+                   <td>{{tweet.LOCATION}}</td>
+                 </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        <div class="row">
+        <div class="col-xs-12">
+          <h5>This web site has been developed using <a href="https://console.ng.bluemix.net/"> the IBM Cloud</a>. 
+           The application gathers tweets and uses sentiment analysis powered by IBM Watson to give each tweet 
+           a score, based on the 'positive' and 'negative' words used in each tweet. This is a powerful way 
+           of determining how the users of Twitter are feeling about a subject, product, brand or organisation.
+           This site and its content is not endorsed by IBM - views are my own. @jamesbelton</h5> 
+        </div>
+      </div>
+      
+    </div>
+          
+          
+          
+      <!--    The value of x is {{x}}-->
+          
+      <!--    The value of nums is {{nums}}-->
+          
+      <!--    <! the stuff in the {{}} is javascript-->
+      <!--     ng-repeat is an angular command >-->
+            
+      <!--      <form>-->
+      <!--        <input type="text" name="a" ng-model="a" />-->
+      <!--        <button ng-click="addnum()">Add</button>-->
+      <!--      </form>-->
+      <!--  <ul>-->
+      <!--      <li ng-repeat="num in nums track by $index">{{num}} : {{num*num}}</li>    -->
+      <!--    </ul>-->
+           
+      <!--  </div>-->
+      <!--</div>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="/vendor/lodash.min.js"></script>
+    <script src="/vendor/moment-with-locales.min.js"></script>
+    <script src="/vendor/highcharts.js"></script>
+    <script src="/vendor/webcam.js"></script>
+    <script src="/vendor/recorder.js"></script>
+    <script src="/vendor/utilities.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
