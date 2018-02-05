@@ -3,7 +3,6 @@ applications:
   host: myTwitterAnalysis
   name: myTwitterAnalysis
   path: .
-  domain: mybluemix.net
   instances: 1
   memory: 256M
   buildpack: nodejs_buildpack
