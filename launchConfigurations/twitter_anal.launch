@@ -1,12 +1,7 @@
 {
   "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
   "Params": {
-    "Target": {
-      "Url": "https://api.ng.bluemix.net",
-      "Org": "james.belton@uk.ibm.com",
-      "Space": "dev"
-    },
-    "Name": "jamesbelton-twitteranal",
+    "Name": "MyTwitterAnalysis",
     "Instrumentation": {}
   },
   "Path": "manifest.yml",
